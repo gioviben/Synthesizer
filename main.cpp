@@ -12,7 +12,7 @@ int main() {
 
 	for (auto d : devices) wcout << "Found Output Device:" << d << endl;
 
-
+	olcNoiseMaker<short> sound(devices[0], 44100, 1, 8, 512);
 
 
 
